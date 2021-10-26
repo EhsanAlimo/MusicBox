@@ -1,0 +1,11 @@
+<h1>Search Result</h1>
+<%@songs.each do |song|%>
+<div class="search_result">
+<ul></ul>
+<li><%=song.name%></li>
+<li><%=song.genre%></li>
+<li><%=song.artist%></li>
+</ul>
+<%==song.track%>
+</div>
+<%end%>

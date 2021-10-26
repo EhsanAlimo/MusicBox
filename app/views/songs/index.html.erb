@@ -1,0 +1,25 @@
+
+<nav class="songs_header">
+<h1>All songs</h1>
+<form action="/search">
+<input type="text" name="q"  placeholder="Search" aria-label="Search">
+<button type="submit">Search</button>
+</form>
+</nav>
+<%= link_to 'Create new song here', new_song_path %>
+<%@songs.each do |song|%>
+<div class="song_lists">
+    <ul>
+    <li>Name: <%= song.name%></li>
+    <li>Genre: <%=song.genre%></li>
+    <li>Artist: <%=song.artist%></li>
+    <%==song.track%>
+    <%=link_to "Add to a playlist and Edit", edit_song_path(song) %>
+    <% if @current_user.admin? %>
+    <%= link_to "Delete", song, :method => 'delete', :data => {:confirm => 'Are you sure ?'}%>
+    <%end%>
+
+    </ul>
+</div>
+
+<%end%>

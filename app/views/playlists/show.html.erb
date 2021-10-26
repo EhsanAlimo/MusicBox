@@ -1,0 +1,10 @@
+<h1><%=@playlist.name%></h1>
+<%= image_tag @playlist.image, :class => 'feature' if @playlist.image.present? %>
+<div class="playlist_songs_list">
+<% @playlist.songs.each do |song|%>
+<%== song.track%>
+<%end%>
+</div>
+<div class="edit_playlist">
+    <%= link_to 'Edit Playlist', edit_playlist_path(@playlist) %>
+</div>

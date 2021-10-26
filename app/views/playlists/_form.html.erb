@@ -1,0 +1,10 @@
+<%= form_for @playlist do |f|%>
+    <%= f.label :Name%>
+    <%= f.text_field :name, :required=>true%>
+    <%= f.label :Image%>
+    <%= f.url_field :image%>
+    <%= f.label :song%>
+    <%= f.select :song_ids, Song.pluck(:name, :id), :include_blank => true%>
+    <%= f.submit%>
+<%end%>
+   
