@@ -1,0 +1,22 @@
+.editPlaylist__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.editPlaylist__container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.editPlaylist__container h1 {
+  margin: 10px 0;
+}
+.Playlis__edit__button {
+  align-items: center;
+}
+.editPlaylist__container p {
+  align-self: flex-start;
+  margin: 10px;
+}

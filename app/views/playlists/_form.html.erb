@@ -3,8 +3,10 @@
     <%= f.text_field :name, :required=>true%>
     <%= f.label :Image%>
     <%= f.url_field :image%>
-    <%= f.label :song%>
-    <%= f.select :song_ids, Song.pluck(:name, :id), :include_blank => true%>
-    <%= f.submit%>
+    
+    <%= f.collection_check_boxes :song_ids, Song.all, :id,:name do |b|%>
+    <p><%=b.label {b.check_box+b.text}%></p>
+    <%end%>
+<%= f.submit :class => "Playlis__edit__button"%>
 <%end%>
    

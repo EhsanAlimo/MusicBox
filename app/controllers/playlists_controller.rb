@@ -28,6 +28,6 @@ end
 
   private 
   def playlist_params
-    params.require(:playlist).permit(:name, :image, :song_ids, :user_id, :playlist_id)
+    params.require(:playlist).permit(:name, :image, :user_id, :playlist_id, :song_ids => [])
   end
 end

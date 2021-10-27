@@ -1,8 +1,17 @@
-<h1>Home Page</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="homepage__main">
+<h1 class="homepage__mainTitle">Music Box</h1>
+
 
 <% if @current_user.present? %>
-  <h3>Welcome back <%= @current_user.name %></h3>
+  <h3 class="homepage__mainSubtitle">We are so happy to see you again <%= @current_user.name %></h3>
 <% end %>
-
+<div class="homepage__container">
+<div class="modal__container">
+  <div class="modal">
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus similique doloribus laboriosam pariatur, possimus excepturi, impedit odit doloremque recusandae, aliquid optio quasi perspiciatis dolorum tenetur nemo nostrum voluptate non! Doloremque?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore saepe. Neque, doloremque odio consectetur facilis quisquam fugit, illum soluta adipisci cumque, sit dolor nulla ipsam quo porro aliquam iure!</p>
+  </div>
+  </div>
+</div>
+</div>
 

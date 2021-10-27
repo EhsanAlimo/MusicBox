@@ -1,5 +1,6 @@
+<div class="newUser__container">
+<div class="newUser__containerForm">
 <h1>Sign up!</h1>
-
 <% if @user.errors.any?%>
     <ol>
         <% @user.errors.full_messages.each do |msg|%>
@@ -7,7 +8,6 @@
        <%end%>
     </ol>
 <%end%>
-
 <%=form_for @user do |f| %>
     <%= f.label :name, "User Name"%>
     <%= f.text_field :name %>
@@ -17,5 +17,8 @@
     <%= f.password_field :password%> 
     <%= f.label :password_confirmation%> 
     <%= f.password_field :password_confirmation%>
-    <%= f.submit "Sign up!"%> 
+    <%= f.submit "Sign up!", :class => "signup__button"%> 
 <%end%>
+<p>Already have an acount ? <%= link_to 'login', login_path %></p>
+</div>
+</div>

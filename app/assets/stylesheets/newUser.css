@@ -1,0 +1,35 @@
+.newUser__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+.newUser__containerForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  border: solid 1px white;
+  border-radius: 1em;
+}
+.newUser__containerForm > form {
+  display: flex;
+  flex-direction: column;
+}
+.signup__button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 4px lightblue;
+}
+.signup__button {
+  margin-top: 1em;
+}
+.newUser__containerForm a {
+  color: blue;
+}
+.newUser__containerForm p {
+  color: white;
+}

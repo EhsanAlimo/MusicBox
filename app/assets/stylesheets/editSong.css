@@ -1,0 +1,16 @@
+.editSong__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.editSong__container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.song__edit__button {
+  margin-top: 10px;
+}

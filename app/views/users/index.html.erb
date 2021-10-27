@@ -1,7 +1,8 @@
-
+<div class="userIndex__admin">
 <h1>All Users</h1>
 <h3><%= User.count%> users have sign up in this platform</h3>
 <% @users.each do |user| %>
   <p><%= user.name%></p>
   <p><%= user.email%></p>
 <% end %>
+</div>

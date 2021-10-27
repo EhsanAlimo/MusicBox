@@ -1,16 +1,18 @@
-<nav class="playlist_header">
+<div class="playlists__container">
 <h1>All playlists</h1>
-
-</nav>
-
 <%if @current_user.playlists.present?%>
 <%@playlists.each do |playlist|%>
+<div class="playlist">
+<div class="image__holder">
 <%= image_tag playlist.image, :class => 'feature' if playlist.image.present? %>
+</div>
 <ul>
-    <li>Name of the playlist: <%=playlist.name%></li>
+    <li>Name of the playlist: <strong><%=playlist.name%></strong></li>
     <%=link_to "Edit", edit_playlist_path(playlist) %>
     <%=link_to "See the Play list", playlist_path(playlist) %>
 
 </ul>
+</div>
 <%end%>
 <%end%>
+</div>

@@ -1,0 +1,70 @@
+.song__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.song_lists {
+  border: 1px solid rgb(235, 235, 228);
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
+  width: 85vw;
+  height: 100%;
+  border: 1px solid white;
+  margin: 10px 0;
+  padding: 0 20px;
+  border-radius: 2em;
+  background-color: #1db954;
+  background: linear-gradient(#1db954, black);
+}
+.song_lists:hover {
+  box-shadow: 0 0 30px rgb(245, 245, 241);
+}
+.song_lists ul {
+  padding: 10px;
+}
+.song_lists a {
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.songList__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding-right: 1em;
+  color: aliceblue;
+}
+.songList__top ul {
+  width: 20%;
+}
+.songList__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.songList__bottom a:hover {
+  cursor: pointer !important;
+  color: blue;
+}
+.songList__bottom a:nth-child(2):hover {
+  cursor: pointer !important;
+  color: red;
+}
+.song__container h1 {
+  text-shadow: 2px 2px 12px rgb(247, 248, 248);
+}
+.song__container button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 12px rgb(247, 248, 248);
+}
+.song__container > a {
+  text-decoration: none;
+  color: #def701;
+  font-weight: bold;
+}

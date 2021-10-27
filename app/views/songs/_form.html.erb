@@ -9,5 +9,5 @@
     <%= f.text_field :track%>
     <%= f.label :playlist_id%>
     <%= f.select :playlist_ids, Playlist.pluck(:name, :id), :include_blank => true%>
-    <%= f.submit%>
+    <%= f.submit :class => "song__edit__button"%>
 <%end%>

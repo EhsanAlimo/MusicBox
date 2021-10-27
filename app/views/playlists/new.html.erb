@@ -1,10 +1,14 @@
+<div class="new__container">
+<div class="new__containerForm">
 <h1>New Playlist</h1>
 <%= form_for @playlist do |f|%>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :Image %>
-    <%= f.url_field :image %>
+    
+    <%= f.text_field :name, :placeholder => "name" %>
+   
+    <%= f.url_field :image, :placeholder => "Image URL"%>
 
     <%= f.submit%>
     
 <%end%>
+</div>
+</div>
