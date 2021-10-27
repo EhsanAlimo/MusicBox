@@ -17,13 +17,14 @@
     
     <%==song.track%>
  </div>
- <div class="songList__bottom">
-    <%=link_to "Add to a playlist and Edit", edit_song_path(song) %>
-    <% if @current_user.admin? %>
-    <%= link_to "Delete", song, :method => 'delete', :data => {:confirm => 'Are you sure ?'}, :class => "delete_link"%>
-</div>
+    <div class="songList__bottom">
+        <%=link_to "Add to a playlist and Edit", edit_song_path(song) %>
+        <% if @current_user.admin? %>
+        <%= link_to "Delete", song, :method => 'delete', :data => {:confirm => 'Are you sure ?'}, :class => "delete_link"%>
+
+        <%end%>
     
-    <%end%>
+    </div>
     </div>
 <%end%>
 </div>
