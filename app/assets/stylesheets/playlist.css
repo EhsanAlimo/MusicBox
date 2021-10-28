@@ -21,6 +21,8 @@
 }
 .new__containerForm > form > input {
   margin: 10px 0;
+  width: 400px;
+  height: 50px;
 }
 .playlists__container {
   display: flex;
@@ -50,6 +52,10 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+}
+.playlist a:hover {
+  color: rgb(214, 187, 31);
+  text-shadow: 2px 2px 4px yellow;
 }
 ul {
   list-style: none;
@@ -94,4 +100,26 @@ ul {
 .playlistShow__container a:hover {
   color: rgb(169, 240, 77);
   text-shadow: 2px 4px 4px lightblue;
+}
+
+@media (max-width: 1000px) {
+  .new__containerForm {
+    width: 80%;
+    height: 80%;
+  }
+  .new__containerForm > form {
+    height: 80%;
+    width: max-content;
+  }
+  .new__containerForm > form > input {
+    width: 400px;
+    height: 50px;
+  }
+  .playlists__container {
+    justify-content: flex-start;
+  }
+  .playlists__container h1 {
+    margin: 20px 0;
+    font-family: sans-serif;
+  }
 }

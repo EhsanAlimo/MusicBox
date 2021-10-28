@@ -11,7 +11,7 @@
 
   <body>
       <div class="backdrop"></div>
-        <nav>
+      <nav>
         <%= link_to 'About', root_path, :class => "homepage__nav"%>
         <% if @current_user.present? %>
         <% if @current_user.admin? %>
