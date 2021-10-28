@@ -1,6 +1,6 @@
-<div class="login__container">
+<div class="login__container animate__animated animate__bounceIn">
 <div class="login__containerForm">
-<h1>Log in</h1>
+<h1>Login</h1>
 <%= form_tag login_path do%>
 <%= label_tag :email%>
 <%= email_field_tag :email%>
@@ -9,6 +9,6 @@
 <%= password_field_tag :password%>
 <%= submit_tag 'Sign in', :class => "login__button"%>
 <%end%>
-<p>Please <%= link_to 'Sign up', new_user_path %> if you do not have an acount</p>
+<p>Please <%= link_to 'Sign up', new_user_path %> if you do not have an account</p>
 </div>
 </div>

@@ -7,6 +7,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
 
   <body>
@@ -21,7 +25,7 @@
         <%=link_to "All Playlists", playlists_path%>
         <%=link_to "All Songs", songs_path%>
 
-          <%= link_to "Log out #{ @current_user.name }", login_path, :method => 'delete' %>
+          <%= link_to "Logout #{ @current_user.name }", login_path, :method => 'delete' %>
           <%else%>
         <%= link_to 'Sign up', new_user_path %>
         <%= link_to 'Sign in', login_path %>
