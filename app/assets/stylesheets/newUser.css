@@ -12,13 +12,21 @@
   justify-content: space-around;
   flex-direction: column;
   width: 50%;
-  height: 50%;
+  height: 70%;
   border: solid 1px white;
   border-radius: 1em;
+}
+.newUser__containerForm p {
+  font-size: 20px;
 }
 .newUser__containerForm > form {
   display: flex;
   flex-direction: column;
+}
+.newUser__containerForm > form > input {
+  margin: 10px 0;
+  width: 400px;
+  height: 50px;
 }
 .signup__button:hover {
   cursor: pointer;
